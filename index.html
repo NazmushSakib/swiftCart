@@ -15,8 +15,8 @@
   </head>
   <body class="font-roboto">
     <!-- navbar start -->
-    <section>
-      <div class="navbar bg-base-100 shadow-sm">
+    <section class="bg-base-200 shadow-sm">
+      <div class="navbar mx-auto w-11/12">
         <div class="navbar-start">
           <a class="btn btn-ghost text-xl text-blue-600">SwiftCart</a>
         </div>
@@ -29,7 +29,13 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn"><i class="fa-solid fa-cart-shopping"></i></a>
+          <div class="indicator">
+            <a class="btn btn-ghost btn-circle"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+            <span class="badge badge-sm indicator-item">0</span>
+          </div>
+
           <div class="dropdown dropdown-end">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <i class="fa-solid fa-bars"></i>
@@ -48,6 +54,34 @@
       </div>
     </section>
     <!-- navbar ends -->
+    <!-- hero section starts -->
+    <section>
+      <div
+        class="relative h-[500px] bg-[url('../images/banner2.png')] bg-cover bg-center"
+      >
+        <!-- Gradient Overlay (left → right dark fade) -->
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-700/60 to-slate-600/40"
+        ></div>
+
+        <!-- Content -->
+        <div class="relative z-10 flex h-full items-center">
+          <div class="max-w-7xl px-11 md:px-16 lg:px-20 2xl:px-24">
+            <div class="max-w-xl text-white">
+              <h1 class="title-font mb-4">Best Collection For You</h1>
+
+              <p class="mb-6 text-slate-200">
+                Discover the latest trends in fashion, electronics, and more.
+                Shop with confidence and style at SwiftCart.
+              </p>
+
+              <button class="btn btn-primary">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section ends -->
 
     <script src="./script/index.js"></script>
   </body>
