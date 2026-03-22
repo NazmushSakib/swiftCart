@@ -7,8 +7,8 @@
 }
 
 @layer components {
-  .common{
-    @apply shadow-sm bg-base-200;
+  .common {
+    @apply bg-base-200 shadow-sm;
   }
   .title-font {
     @apply text-3xl font-bold md:text-4xl lg:text-5xl xl:text-6xl;
@@ -30,5 +30,11 @@
   }
   .card-grid {
     @apply grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-6 lg:grid-cols-4;
+  }
+  .details-btn {
+    @apply cursor-pointer rounded-xl border border-gray-400 px-7 py-2 font-semibold text-gray-600;
+  }
+  .add-btn {
+    @apply btn btn-primary rounded-xl px-8 py-2;
   }
 }
